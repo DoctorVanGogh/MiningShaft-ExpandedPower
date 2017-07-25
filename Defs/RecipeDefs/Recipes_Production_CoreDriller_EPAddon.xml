@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+	<RecipeDef Name="CoreDrillBase" Abstract="True">
+		<workAmount>5000</workAmount>
+		<efficiencyStat>MiningSpeed</efficiencyStat>
+    	<effectWorking>Drill</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<workSkill>Mining</workSkill>
+		<recipeUsers>
+			<li>CoreDrill</li>
+		</recipeUsers>		
+	</RecipeDef>
+
+	<!-- ============== Actual recipes =================== -->
+	<RecipeDef ParentName="CoreDrillBase">
+		<defName>MiningDeepCopper</defName>
+		<label>mining deep Copper</label>
+		<description>mining deep Copper.</description>
+		<jobString>Mining deep Copper.</jobString>
+		<products>
+			<EXP_Copper>30</EXP_Copper>
+		</products>		
+	</RecipeDef>
+
+	<RecipeDef ParentName="CoreDrillBase">
+		<defName>MiningDeepQuartz</defName>
+		<label>mining deep Quartz</label>
+		<description>mining deep Quartz.</description>
+		<jobString>Mining deep Quartz.</jobString>
+		<products>
+			<EXP_Quartz>10</EXP_Quartz>
+		</products>		
+	</RecipeDef>
+
+	<RecipeDef ParentName="CoreDrillBase">
+		<defName>MiningDeepGalena</defName>
+		<label>mining deep Galena</label>
+		<description>mining deep Galena.</description>
+		<jobString>Mining deep Galena.</jobString>
+		<products>
+			<EXP_Lead>40</EXP_Lead>
+		</products>		
+	</RecipeDef>	
+</RecipeDefs>
